@@ -1,0 +1,134 @@
+$strong-orange: #fd5800;
+$light-orange: rgb(236, 145, 25);
+$strong-black: #242124;
+$black: #363838;
+$light: #ecead0;
+
+.contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto;
+  .contact-info {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 20px;
+    .card {
+      background: #2f3542;
+      padding: 0 20px;
+      margin: 0 10px;
+      width: calc(33% - 20px);
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: $light;
+      cursor: pointer;
+      box-shadow: 10px 10px 3px -3px rgba(0, 0, 0, 0.3);
+      .card-icon {
+        font-size: 28px;
+        background: $strong-orange;
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        line-height: 60px !important;
+        border-radius: 50%;
+        transition: 0.3s linear;
+      }
+      p {
+        font-size: 1.7rem;
+        margin-top: 20px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        max-height: 0;
+        opacity: 0;
+        transition: 0.3s linear;
+      }
+    }
+  }
+}
+.contact-info .card:hover .card-icon {
+  background: none;
+  color: $strong-orange;
+  transform: scale(1.6);
+}
+.contact-info .card:hover p {
+  max-height: 40px;
+  opacity: 1;
+}
+
+@media (max-width: 800px) {
+  .contact-info {
+    flex-direction: column;
+  }
+  .contacto .contact-info .card {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
+  }
+  .formulario {
+    min-width: 100%;
+  }
+}
+
+.formulario {
+  width: 50%;
+  margin: 3rem auto;
+  min-height: 100vh;
+  background-color: #2f3542;
+  padding: 3rem;
+  box-shadow: 10px 10px 3px -3px rgba(0, 0, 0, 0.3);
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    label {
+      font-size: 1.7rem;
+      color: $light;
+    }
+    input {
+      margin: 1rem auto;
+      height: 50px;
+      width: 100%;
+      background-color: $light;
+      border: none;
+      outline: none;
+      border-radius: 30px;
+    }
+    textarea {
+      margin: 1rem auto;
+      height: 150px;
+      width: 100%;
+      outline: none;
+      background-color: $light;
+      border: none;
+      border-radius: 20px;
+    }
+    .enviarbtn {
+      font-size: 1.5rem;
+      width: 50%;
+      background-color: $strong-orange;
+      color: $light;
+      outline: none;
+      border: none;
+      font-weight: 600;
+      border-radius: 25px;
+      cursor: pointer;
+      &:hover {
+        background-color: $light-orange;
+      }
+    }
+  }
+}
+input::placeholder,
+textarea::placeholder {
+  font-size: 1.3rem;
+  font-family: "Open Sans";
+  padding: 1rem;
+}

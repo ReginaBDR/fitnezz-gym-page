@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Gimnasio Fitnezz</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:400,600|Open+Sans:600,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <h2 class="brand"><a href="#">Br<span>a</span>nd</a></h2>
+      <ul>
+        <li data-aos="fade-left"><a href="index.html">Home</a></li>
+        <li data-aos="fade-left" data-aos-delay="200">
+          <a href="#">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+    <header class="header">
+      <img
+        src="/imagenes/crossfit.jpg"
+        class="parallax"
+        alt="fotografia de gimnasio"
+      />
+      <div class="content">
+        <h1 data-aos="zoom-in">Fitnezz Gym</h1>
+        <a href="index.html">Unite a nosotros</a>
+      </div>
+    </header>
+
+    <div class="title" data-aos="fade-up">
+      <h2>Contacto</h2>
+      <span>Contacto</span>
+    </div>
+    <section class="contacto">
+      <div class="contact-info">
+        <div class="card" data-aos="flip-left">
+          <i class="card-icon far fa-envelope"></i>
+          <p>email@domain.com</p>
+        </div>
+
+        <div class="card" data-aos="flip-left" data-aos-delay="100">
+          <i class="card-icon fas fa-phone"></i>
+          <p>+000000000000</p>
+        </div>
+
+        <div class="card" data-aos="flip-left" data-aos-delay="150">
+          <i class="card-icon fas fa-map-marker-alt"></i>
+          <p>Montevideo, UY.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="formulario" data-aos="zoom-in">
+      <form>
+        <label for="Nombre">Nombre:</label>
+        <input type="text" name="Nombre" placeholder="Nombre" />
+        <label for="Teléfono">Teléfono:</label>
+        <input type="text" name="TeléfonoEmail" placeholder="TeléfonoEmail" />
+        <label for="Email">Email:</label>
+        <input type="text" name="Email" placeholder="Email" />
+        <label for="Asunto">Asunto:</label>
+        <input type="text" name="Asunto" placeholder="Asunto" />
+        <label for="Mensaje">Mensaje</label>
+        <textarea name="Mensaje" placeholder="Mensaje"></textarea>
+        <input class="enviarbtn" type="submit" name="submit" value="Enviar" />
+      </form>
+    </section>
+
+    <footer>
+      <div class="footer-container" data-aos="fade-right">
+        <div class="left-col">
+          <div class="social-media">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <p class="rights-text">
+            © 2020 Creado por ReginaBDR, todos los derechos reservados.
+          </p>
+        </div>
+
+        <div class="right-col" data-aos="fade-left">
+          <h1>Promociones</h1>
+          <div class="border"></div>
+          <p>Ingresá tu Email para no perderte las novedades!</p>
+          <form action="" class="newsletter-form">
+            <input type="text" class="txtb" placeholder="mailto@mail.com" />
+            <input type="submit" class="btn" value="Suscribirse" />
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      window.addEventListener("scroll", function() {
+        const parallax = document.querySelector(".parallax");
+        let scrollPosition = window.pageYOffset;
+        parallax.style.transform = "translateY(" + scrollPosition * 0.5 + "px)";
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true
+      });
+    </script>
+  </body>
+</html>
