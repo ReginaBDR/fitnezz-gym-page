@@ -1,2 +1,5 @@
-# fitnezz-gym-page
-Template de sitio para un Gym. Html, Sass, Js.
+## Web page developed for a Gym
+
+### 🛠️ Build with:  _Html, Sass and JavaScript._
+
+[Live site](https://fitnezzgym.netlify.com/)
